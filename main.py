@@ -44,7 +44,7 @@ class Player(GameSprite):
 
 
 racket1 = Player("racket.png", 10, H/3, 50, 150, 5)
-
+racket2 = Player("racket.png", W-60, H/3, 50, 150, 5)
 
 game = True
 finish = False
@@ -55,6 +55,9 @@ while game:
 
     racket1.reset()
     racket1.update_l()
+
+    racket2.reset()
+    racket2.update_r()
 
     for e in event.get():
         if e.type == QUIT:

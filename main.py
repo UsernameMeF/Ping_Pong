@@ -102,12 +102,12 @@ while game:
             points2 += 1
             ball.rect.x, ball.rect.y = W/2, H/2
 
-    if points1 >= 1:
+    if points1 >= 5:
         finish = True
         window.blit(player1_win, (W/3-50, H/2))
             
 
-    if points2 >= 1:
+    if points2 >= 5:
         finish = True
         window.blit(player2_win, (W/3-50, H/2))
             
